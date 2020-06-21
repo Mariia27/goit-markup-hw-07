@@ -2,19 +2,21 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .advantage {
   display: flex;
-  margin: 0;
-  padding: 0;
-
+  @extend %list;
   align-content: center;
   flex-wrap: nowrap;
 }
 
-.advantages:not(:last-child) {
-  margin-right: 30px;
+.advantages {
+  width: 270px;
+  @extend %list;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
+
 .icon-svg {
   display: inline-flex;
   width: 270px;
@@ -34,10 +36,6 @@
   line-height: 1.14;
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
-}
-.advantages {
-  width: 270px;
-  @extend %list;
 }
 .text-caption {
   font-family: $main-font, $reserv-font;

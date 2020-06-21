@@ -13,11 +13,11 @@ footer {
   border-radius: 50%;
   color: $primary-text-color;
   cursor: pointer;
-}
-.link-item .social:hover,
-.link-item .social:focus {
-  background-color: $hover-link-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hover-link-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .link-item:not(:last-child) {
   margin-right: 10px;

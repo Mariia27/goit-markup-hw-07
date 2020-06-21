@@ -35,16 +35,13 @@
 .authorise-nav {
   display: flex;
   @extend %list;
-
-  padding: 0;
-  margin: 0;
   margin-left: auto;
-
   align-items: center;
-}
-.authorise-nav .link:hover,
-.authorise-nav .link:focus {
-  color: $hover-link-color;
+
+  & .link:hover,
+  .link:focus {
+    color: $hover-link-color;
+  }
 }
 .item .link {
   display: flex;
@@ -71,15 +68,15 @@
   background: #2196f3;
   border-radius: 2px;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $hover-link-color;
-}
 .site-nav {
   display: flex;
   @extend %list;
-}
 
+  & .link:hover,
+  .link:focus {
+    color: $hover-link-color;
+  }
+}
 .item:not(:last-child) {
   margin-right: 50px;
 }

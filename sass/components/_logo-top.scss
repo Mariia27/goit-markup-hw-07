@@ -14,11 +14,11 @@
 .logo-color {
   color: $tittle-text-color;
 }
+.logo-nav {
+  display: flex;
+}
 .logo-nav,
 .logo:hover,
 .logo:focus {
   color: $hover-link-color;
-}
-.logo-nav {
-  display: flex;
 }
